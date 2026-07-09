@@ -1,1 +1,100 @@
+:root{
 
+    /*=========================================================
+      FIDI-SCIE ENTERPRISE COLOR SYSTEM
+    =========================================================*/
+
+    --primary-color:#0A1F44;
+    --secondary-color:#123A73;
+    --accent-color:#00C2FF;
+    --accent-hover:#0099CC;
+
+    --background-color:#07111F;
+    --surface-color:#102542;
+
+    --card-color:rgba(255,255,255,0.08);
+
+    --text-color:#FFFFFF;
+    --text-secondary:#D8E3F0;
+
+    --border-color:rgba(255,255,255,0.15);
+
+    --success-color:#22C55E;
+    --warning-color:#FACC15;
+    --danger-color:#EF4444;
+
+    /*=========================================================
+      TYPOGRAPHY
+    =========================================================*/
+
+    --font-family:
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    --font-size-xs:12px;
+    --font-size-sm:14px;
+    --font-size-md:16px;
+    --font-size-lg:20px;
+    --font-size-xl:28px;
+    --font-size-2xl:36px;
+    --font-size-3xl:48px;
+
+    --font-weight-light:300;
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-bold:700;
+
+    --line-height:1.6;
+
+    /*=========================================================
+      SPACING
+    =========================================================*/
+
+    --space-xs:5px;
+    --space-sm:10px;
+    --space-md:20px;
+    --space-lg:40px;
+    --space-xl:60px;
+    --space-2xl:80px;
+
+    /*=========================================================
+      BORDER RADIUS
+    =========================================================*/
+
+    --radius-sm:6px;
+    --radius-md:10px;
+    --radius-lg:18px;
+    --radius-xl:24px;
+
+    /*=========================================================
+      SHADOW
+    =========================================================*/
+
+    --shadow-sm:
+    0 2px 8px rgba(0,0,0,0.15);
+
+    --shadow-md:
+    0 8px 20px rgba(0,0,0,0.20);
+
+    --shadow-lg:
+    0 20px 40px rgba(0,0,0,0.30);
+
+    /*=========================================================
+      TRANSITION
+    =========================================================*/
+
+    --transition-fast:0.20s;
+
+    --transition-normal:0.35s;
+
+    --transition-slow:0.60s;
+
+    /*=========================================================
+      CONTAINER
+    =========================================================*/
+
+    --container-width:1200px;
+
+}
