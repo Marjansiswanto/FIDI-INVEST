@@ -314,3 +314,134 @@ CARD
     color:var(--text-secondary);
 
         }
+/*=========================================================
+FOOTER
+=========================================================*/
+
+footer{
+
+    background:var(--primary-color);
+
+    border-top:1px solid var(--border-color);
+
+    margin-top:80px;
+
+    padding:60px 0 30px;
+
+}
+
+.footer-column h3{
+
+    color:var(--accent-color);
+
+    margin-bottom:20px;
+
+    font-size:var(--font-size-lg);
+
+}
+
+.footer-column p{
+
+    color:var(--text-secondary);
+
+    margin-bottom:10px;
+
+}
+
+.footer-column ul{
+
+    list-style:none;
+
+}
+
+.footer-column ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-column ul li a{
+
+    color:var(--text-secondary);
+
+    text-decoration:none;
+
+    transition:var(--transition-normal);
+
+}
+
+.footer-column ul li a:hover{
+
+    color:var(--accent-color);
+
+}
+
+footer hr{
+
+    margin:40px 0 25px;
+
+    border:none;
+
+    border-top:1px solid var(--border-color);
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    color:var(--text-secondary);
+
+    font-size:var(--font-size-sm);
+
+}
+
+/*=========================================================
+COMMON ELEMENT
+=========================================================*/
+
+a{
+
+    transition:var(--transition-normal);
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+}
+
+input,
+select,
+textarea{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+::selection{
+
+    background:var(--accent-color);
+
+    color:var(--text-color);
+
+}
