@@ -1,1 +1,149 @@
+*{
 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background-color);
+    color:var(--text-color);
+
+    font-family:var(--font-family);
+    font-size:var(--font-size-md);
+
+    line-height:var(--line-height);
+
+}
+
+.container{
+
+    width:100%;
+    max-width:var(--container-width);
+
+    margin:auto;
+
+    padding:0 var(--space-md);
+
+}
+
+/*=========================================================
+HEADER
+=========================================================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(7,17,31,.90);
+
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+.logo h1{
+
+    color:var(--accent-color);
+
+    font-size:var(--font-size-xl);
+
+    font-weight:var(--font-weight-bold);
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav ul li a{
+
+    color:var(--text-color);
+
+    text-decoration:none;
+
+    transition:var(--transition-normal);
+
+    font-weight:var(--font-weight-medium);
+
+}
+
+nav ul li a:hover{
+
+    color:var(--accent-color);
+
+}
+
+/*=========================================================
+HERO
+=========================================================*/
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding-top:80px;
+
+}
+
+.hero-content h2{
+
+    font-size:var(--font-size-3xl);
+
+    margin-bottom:var(--space-md);
+
+}
+
+.hero-content p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text-secondary);
+
+    margin-bottom:var(--space-lg);
+
+  }
