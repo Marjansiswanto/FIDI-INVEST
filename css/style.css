@@ -1,1 +1,1009 @@
+/* ==========================================================
+   FIDI-INVEST Enterprise Platform
+   SCIE SVS v2.0
+   File : style.css
+   Version : 1.0
+   Status : IMPLEMENTATION
+========================================================== */
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--font-family);
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================================
+   LINK
+========================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.header-container,
+.hero-container,
+.feature-container,
+.trust-container,
+.footer-container{
+
+    width:100%;
+
+    max-width:var(--container-width);
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   COMPONENT-001
+   ENTERPRISE HEADER
+========================================================== */
+
+.enterprise-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:var(--header-height);
+
+    z-index:var(--z-header);
+
+    background:var(--glass-background);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border-bottom:1px solid var(--glass-border);
+
+    transition:var(--transition-normal);
+
+}
+
+.header-container{
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 var(--space-lg);
+
+}
+
+.logo-area{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-sm);
+
+}
+
+.logo-icon{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.logo-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:var(--font-xl);
+
+    font-weight:var(--font-weight-extrabold);
+
+    letter-spacing:var(--letter-tight);
+
+}
+
+.logo-fidi{
+
+    color:var(--brand-primary);
+
+}
+
+.logo-invest{
+
+    color:var(--brand-secondary);
+
+}
+
+.logo-subtitle{
+
+    margin-top:2px;
+
+    font-size:var(--font-sm);
+
+    color:var(--text-secondary);
+
+    font-weight:var(--font-weight-regular);
+
+}
+
+/* ==========================================================
+   COMPONENT-001
+   NAVIGATION
+========================================================== */
+
+.main-navigation{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    list-style:none;
+
+    gap:var(--space-xl);
+
+}
+
+.nav-item{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.nav-link{
+
+    position:relative;
+
+    font-size:var(--font-md);
+
+    font-weight:var(--font-weight-medium);
+
+    color:var(--text-primary);
+
+    transition:var(--transition-normal);
+
+}
+
+.nav-link:hover{
+
+    color:var(--brand-secondary);
+
+}
+
+.nav-link.active{
+
+    color:var(--brand-secondary);
+
+}
+
+.nav-link.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:100%;
+
+    height:2px;
+
+    background:var(--brand-secondary);
+
+    border-radius:10px;
+
+}
+
+/* ==========================================================
+   LOGIN BUTTON
+========================================================== */
+
+.header-action{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.login-button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:120px;
+
+    height:var(--button-height);
+
+    padding:0 var(--space-lg);
+
+    border-radius:var(--radius-medium);
+
+    background:var(--brand-secondary);
+
+    color:var(--brand-primary);
+
+    font-size:var(--font-md);
+
+    font-weight:var(--font-weight-semibold);
+
+    transition:var(--transition-normal);
+
+}
+
+.login-button:hover{
+
+    opacity:.90;
+
+      }
+/* ==========================================================
+   COMPONENT-003
+   HERO SECTION
+========================================================== */
+
+.hero-section{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:var(--header-height);
+
+}
+
+.hero-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:var(--space-2xl);
+
+}
+
+.hero-left{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.hero-label{
+
+    display:inline-flex;
+
+    margin-bottom:var(--space-sm);
+
+    font-size:var(--font-sm);
+
+    font-weight:var(--font-weight-semibold);
+
+    color:var(--brand-secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.hero-title{
+
+    font-size:var(--font-4xl);
+
+    font-weight:var(--font-weight-extrabold);
+
+    line-height:1.15;
+
+    letter-spacing:var(--letter-tight);
+
+    color:var(--text-primary);
+
+    margin-bottom:var(--space-md);
+
+}
+
+.hero-description{
+
+    max-width:560px;
+
+    font-size:var(--font-lg);
+
+    line-height:var(--line-relaxed);
+
+    color:var(--text-secondary);
+
+    margin-bottom:var(--space-xl);
+
+}
+
+.hero-action{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-md);
+
+}
+
+.btn-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:180px;
+
+    height:var(--button-height);
+
+    padding:0 var(--space-lg);
+
+    border-radius:var(--radius-medium);
+
+    background:var(--brand-secondary);
+
+    color:var(--brand-primary);
+
+    font-weight:var(--font-weight-semibold);
+
+    transition:var(--transition-normal);
+
+}
+
+.btn-secondary{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:180px;
+
+    height:var(--button-height);
+
+    padding:0 var(--space-lg);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:var(--radius-medium);
+
+    color:var(--text-primary);
+
+    transition:var(--transition-normal);
+
+  }
+
+/* ==========================================================
+   COMPONENT-005
+   HERO CENTER
+========================================================== */
+
+.hero-center{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+.digital-globe{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.globe-container{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:520px;
+
+    aspect-ratio:1/1;
+
+}
+
+/* ==========================================================
+   COMPONENT-004
+   LOGIN CARD
+========================================================== */
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:var(--login-card-width);
+
+    padding:40px;
+
+    border-radius:var(--radius-large);
+
+    background:var(--glass-background);
+
+    border:1px solid var(--glass-border);
+
+    box-shadow:var(--shadow-soft);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+.login-card-header{
+
+    margin-bottom:var(--space-xl);
+
+}
+
+.login-card-header h2{
+
+    font-size:var(--font-2xl);
+
+    font-weight:var(--font-weight-bold);
+
+    color:var(--text-primary);
+
+    margin-bottom:8px;
+
+}
+
+.login-card-header p{
+
+    color:var(--text-secondary);
+
+    font-size:var(--font-md);
+
+    line-height:var(--line-normal);
+
+}
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-md);
+
+  }
+
+/* ==========================================================
+   COMPONENT-004
+   LOGIN FORM
+========================================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.form-group label{
+
+    font-size:var(--font-md);
+
+    font-weight:var(--font-weight-medium);
+
+    color:var(--text-primary);
+
+}
+
+.form-group input{
+
+    width:100%;
+
+    height:var(--input-height);
+
+    padding:0 18px;
+
+    border:1px solid var(--glass-border);
+
+    border-radius:var(--radius-medium);
+
+    background:rgba(255,255,255,.04);
+
+    color:var(--text-primary);
+
+    font-size:var(--font-md);
+
+    outline:none;
+
+    transition:var(--transition-normal);
+
+}
+
+.form-group input::placeholder{
+
+    color:var(--text-muted);
+
+}
+
+.form-group input:focus{
+
+    border-color:var(--brand-secondary);
+
+}
+
+/* ==========================================================
+   LOGIN OPTION
+========================================================== */
+
+.login-option{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.remember-me{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:var(--font-sm);
+
+    color:var(--text-secondary);
+
+    cursor:pointer;
+
+}
+
+.remember-me input{
+
+    cursor:pointer;
+
+}
+
+.forgot-password{
+
+    font-size:var(--font-sm);
+
+    color:var(--brand-secondary);
+
+    transition:var(--transition-normal);
+
+}
+
+.forgot-password:hover{
+
+    opacity:.85;
+
+}
+
+/* ==========================================================
+   LOGIN BUTTON
+========================================================== */
+
+.btn-login{
+
+    width:100%;
+
+    height:var(--button-height);
+
+    border:none;
+
+    border-radius:var(--radius-medium);
+
+    background:var(--brand-secondary);
+
+    color:var(--brand-primary);
+
+    font-size:var(--font-md);
+
+    font-weight:var(--font-weight-semibold);
+
+    cursor:pointer;
+
+    transition:var(--transition-normal);
+
+}
+
+.btn-login:hover{
+
+    opacity:.90;
+
+}
+
+/* ==========================================================
+   SSO BUTTON
+========================================================== */
+
+.btn-sso{
+
+    width:100%;
+
+    height:var(--button-height);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:var(--radius-medium);
+
+    background:transparent;
+
+    color:var(--text-primary);
+
+    font-size:var(--font-md);
+
+    font-weight:var(--font-weight-medium);
+
+    cursor:pointer;
+
+    transition:var(--transition-normal);
+
+}
+
+.btn-sso:hover{
+
+    border-color:var(--brand-secondary);
+
+}
+
+/* ==========================================================
+   REGISTER LINK
+========================================================== */
+
+.register-link{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-top:var(--space-sm);
+
+    font-size:var(--font-sm);
+
+    color:var(--text-secondary);
+
+}
+
+.register-link a{
+
+    color:var(--brand-secondary);
+
+    font-weight:var(--font-weight-semibold);
+
+  }
+
+/* ==========================================================
+   COMPONENT-006
+   FEATURE SECTION
+========================================================== */
+
+.feature-section{
+
+    width:100%;
+
+    padding:var(--section-spacing) 0;
+
+}
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:var(--space-lg);
+
+}
+
+.feature-card{
+
+    padding:32px;
+
+    border-radius:var(--radius-large);
+
+    background:var(--glass-background);
+
+    border:1px solid var(--glass-border);
+
+    box-shadow:var(--shadow-soft);
+
+    text-align:left;
+
+}
+
+.feature-icon{
+
+    width:56px;
+
+    height:56px;
+
+    margin-bottom:var(--space-md);
+
+}
+
+.feature-card h3{
+
+    margin-bottom:var(--space-sm);
+
+    font-size:var(--font-xl);
+
+    font-weight:var(--font-weight-bold);
+
+    color:var(--text-primary);
+
+}
+
+.feature-card p{
+
+    color:var(--text-secondary);
+
+    line-height:var(--line-relaxed);
+
+}
+
+/* ==========================================================
+   COMPONENT-007
+   TRUST SECTION
+========================================================== */
+
+.trust-section{
+
+    padding:0 0 var(--section-spacing);
+
+}
+
+.trust-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:var(--space-md);
+
+}
+
+.trust-title{
+
+    font-size:var(--font-lg);
+
+    font-weight:var(--font-weight-semibold);
+
+    color:var(--text-primary);
+
+}
+
+.trust-badge{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:var(--space-lg);
+
+}
+
+.trust-badge span{
+
+    padding:10px 20px;
+
+    border-radius:var(--radius-medium);
+
+    border:1px solid var(--glass-border);
+
+    background:var(--glass-background);
+
+    color:var(--text-secondary);
+
+    font-size:var(--font-sm);
+
+    font-weight:var(--font-weight-medium);
+
+}
+
+/* ==========================================================
+   COMPONENT-008
+   ENTERPRISE FOOTER
+========================================================== */
+
+.enterprise-footer{
+
+    border-top:1px solid var(--glass-border);
+
+    padding:40px 0;
+
+}
+
+.footer-content{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:var(--space-lg);
+
+}
+
+.footer-brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:var(--font-xl);
+
+    font-weight:var(--font-weight-extrabold);
+
+}
+
+.footer-fidi{
+
+    color:var(--brand-primary);
+
+}
+
+.footer-invest{
+
+    color:var(--brand-secondary);
+
+}
+
+.footer-tagline{
+
+    color:var(--text-secondary);
+
+    font-size:var(--font-sm);
+
+}
+
+.footer-copyright{
+
+    color:var(--text-muted);
+
+    font-size:var(--font-sm);
+
+}
+
 
